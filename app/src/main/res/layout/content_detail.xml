@@ -8,4 +8,62 @@
     tools:context=".DetailActivity"
     tools:showIn="@layout/activity_detail">
 
+  <TextView
+    android:id="@+id/file_name_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:text="File Name : "
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+  <TextView
+    android:id="@+id/file_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Retrofit"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintBottom_toBottomOf="@+id/file_name_text_view"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/file_name_text_view"
+    app:layout_constraintTop_toTopOf="@+id/file_name_text_view"></TextView>
+
+
+  <TextView
+    android:id="@+id/status_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Success"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:layout_margin="16dp"
+
+    app:layout_constraintEnd_toEndOf="@+id/file_name"
+    app:layout_constraintStart_toStartOf="@+id/file_name"
+    app:layout_constraintTop_toBottomOf="@+id/file_name"></TextView>
+
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:text="Status : "
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintEnd_toEndOf="@+id/file_name_text_view"
+    app:layout_constraintStart_toStartOf="@+id/file_name_text_view"
+    app:layout_constraintTop_toBottomOf="@+id/file_name_text_view"></TextView>
+
+  <Button
+    android:id="@+id/ok_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:text="OK"
+    android:background="@color/colorPrimary"
+    />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
